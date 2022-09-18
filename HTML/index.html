@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="Favicon.png">
+    <link rel="icon" type="image/x-icon" href="../Utilities/Favicon.png">
     <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
     
@@ -55,39 +55,7 @@
 
     <!-- HTML Ends -->
 
-    <script src="../../JavaScript/jquery-3.6.1.min.js"></script>
-    <script>
-
-        // JavaScript Starts Here
-
-        const input = $('#value-input');
-        const enter = (quantity) => {
-            input.val(`${input.val()+quantity}`)
-            var audio = {};
-            audio["walk"] = new Audio();
-            audio["walk"].src = "Click.wav";
-            audio["walk"].play();
-        }
-
-        const equal = () => {
-            let result = eval(input.val());
-            input.val(result)
-            var audio = {};
-            audio["walk"] = new Audio();
-            audio["walk"].src = "Click.wav";
-            audio["walk"].play();
-        }
-
-        const allclear = () => {
-            input.val('');
-            var audio = {};
-            audio["walk"] = new Audio();
-            audio["walk"].src = "Click.wav";
-            audio["walk"].play();
-        }
-
-        // JavaScript Ends Here
-
-    </script>
+    <script src="../../JS/jquery-3.6.1.min.js"></script>
+    <script src="../JS/script.js"></script>
 </body>
 </html>
