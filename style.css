@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Ubuntu:wght@300&display=swap');
+
+/* 
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+*/
+
+/* CSS Starts */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    padding: 5px;
+    background-color: rgb(98, 7, 7);
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* Calculator Styling Starts */
+
+#calculator{
+    width: 100%;
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.506);
+    color: white;
+}
+
+#calculator #name{
+    width: 100%;
+    margin: 8px auto;
+    text-align: center;
+    max-width: 90%;
+    font-family: 'Dosis', sans-serif;
+    font-size: 8vmin;
+}
+
+#calculator #surface{
+    width: 100%;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#calculator #surface #input {
+    width: 100%;
+    margin: auto;
+    max-width: 90%;
+    text-align: center;
+}
+
+#calculator #surface #input input{
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    text-align: right;
+    padding: 6px 10px;
+    font-size: 2.5rem;
+    font-weight: 100;
+    outline: none;
+    border-radius: 5px;
+    border: 0.5px solid black;
+    background-color: rgb(86, 86, 84,0.6);
+    color: white;
+    font-family: 'Dosis', sans-serif;
+}
+
+#calculator #surface #btns{
+    width: 100%;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+#row1 , #row2 , #row3 , #row4 , #row5{
+    width: 100%;
+    max-width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+
+#row1 .btn , #row2 .btn , #row3 .btn , #row4 .btn , #row5 .btn{
+    width: 100%;
+    padding: 20px 5px;
+    margin: 0 5px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    background-color: rgb(86, 86, 84,0.9);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover{
+    transform: scale(1.06);
+    box-shadow: 2px 2px 20px black;
+}
+
+
+@media only screen and (max-width: 800px) {
+    #calculator{
+        width: 100%;
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 1px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid black;
+        justify-content: center;
+        border-radius: 10px;
+        background-color: rgba(202, 115, 8, 0.553);
+        color: white;
+    }
+
+    #calculator #surface{
+        width: 100%;
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #calculator #surface #input {
+        width: 100%;
+        margin: auto;
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    #calculator #surface #input input{
+        width: 100%;
+        max-width: 100%;
+        margin: auto;
+        text-align: right;
+        padding: 5px 10px;
+        font-size: 1.5rem;
+        outline: none;
+        border-radius: 5px;
+        border: 0 solid inherit;
+        background-color: rgba(5, 27, 47, 0.726);
+        color: white;
+    }
+
+    #calculator #surface #btns{
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        margin: 5px auto;
+    }
+
+    #row1 , #row2 , #row3 , #row4 , #row5{
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px;
+    }
+
+    #row1 .btn , #row2 .btn , #row3 .btn , #row4 .btn , #row5 .btn{
+        width: 100%;
+        padding: 15px 8px;
+        margin: 0 5px;
+        font-size: 1.5rem;
+        background-color: rgb(4, 14, 23);
+    }
+
+    .btn:hover{
+        transform: scale(1.05);
+        box-shadow: 1px 1px 15px rgb(2, 6, 23);
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #row1 .btn , #row2 .btn , #row3 .btn , #row4 .btn , #row5 .btn{
+        width: 100%;
+        padding: 15px 8px;
+        margin: 0 5px;
+        font-size: 4vmin;
+        
+    }
+}
+
+/* Calculator Styling Ends */
+
+/* CSS Ends */
